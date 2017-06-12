@@ -332,7 +332,7 @@ header.smaller nav a {
         }
         /* CSS used here will be applied after bootstrap.css */
 #under {position:relative;}
-#over {position:absolute; width:25%; text-align:left; bottom:10%; right:0; left:0; z-index:3;background-color: #000;color: #fff;opacity: 0.7;}
+#over {position:absolute; width:30%; text-align:left; bottom:10%; right:0; left:0; z-index:3;background-color: #000;color: #fff;opacity: 0.7;}
 img {width:100%;}
 
   @media only screen and (max-width: 768px) {
