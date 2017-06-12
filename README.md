@@ -1,2 +1,2 @@
-# MATSUniversity
-Website for MATS University
+# MATS_University
+Official website for MATS university
