@@ -27,7 +27,7 @@ footer {
 .navbar.navbar-fixed-top.fixed-theme {
     background-color: #fff;
     border-color: #274472;
-    box-shadow: 0 0 5px rgba(0,0,0,.8);
+  /*  box-shadow: 0 0 5px rgba(0,0,0);*/
 }
 
 .navbar-brand.fixed-theme {
@@ -50,9 +50,10 @@ footer {
 .navbar-default .navbar-nav > li.dropdown:hover > a,
 .navbar-default .navbar-nav > li.dropdown:hover > a:hover,
 .navbar-default .navbar-nav > li.dropdown:hover > a:focus {
-    background-color: #e0e0e0;
-    color: #e0e0e0;
+    background-color: #transperent;
+    color: #000;
 }
+
 li.dropdown:hover > .dropdown-menu {
     display: inherit;
 }
