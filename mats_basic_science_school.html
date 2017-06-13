@@ -175,7 +175,7 @@
         float: left;
         margin-left: 3%;
         width: 60%;
-        height: 20%
+        height: 10%
       }
       .pgdiv{
         width: 80%
@@ -194,6 +194,10 @@
         width: 30%;
         height: 25%
       }
+      #resphead{
+        display: none;
+        margin-top: -2%
+      }
     </style>
     <style>
         @media only screen and (max-width: 768px) {
@@ -206,7 +210,7 @@
             float: left;
             margin-left: 3%;
             width: 90%;
-            height: 30%
+            height: 25%
           }
           .pgdiv{
             width: 100%
@@ -224,6 +228,12 @@
             float: left;
             width: 100%;
             height: 25%
+          }
+          #over{
+            display: none;
+          }
+          #resphead{
+            display: block;
           }
         }
         @media only screen and (max-width: 500px) {
@@ -236,7 +246,7 @@
             float: left;
             margin-left: 3%;
             width: 90%;
-            height: 30%
+            height: 25%
           }
           .pgdiv{
             width: 100%
@@ -255,8 +265,34 @@
             width: 100%;
             height: 25%
           }
+          #over{
+            display: none;
+          }
+          #resphead{
+            display: block;
+          }
+        }
+        #over{
+          width: 30%;
         }
 
+    </style>
+    <style>
+    .zoom {
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+  padding-bottom: 1%;
+}
+.zoom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+}
     </style>
 </head>
 <body style="font-family: Raleway;">
@@ -275,159 +311,159 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">About MATS</strong><b class="caret" style="color: #337ab7"></b></a>
-                    <ul class="dropdown-menu animated slideDown">
-                        <li><a href="#">Vision and Mission</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Our Values</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Chancellor's Message</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Vice Chancellor's Message</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Promoter Message</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Approvals and Recognitions</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Our Leadership</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Organizational Hierarchy</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">State of The Art Infrastructure</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Monthly Progress Report</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">CGPURC Headline</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Beyond Academics</strong><b class="caret" style="color: #337ab7"></b></a>
-                    <ul class="dropdown-menu animated slideDown">
-                        <li><a href="#">MATS Sports</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATSotsav</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS Social Program</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS Hostel</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Insdustrial Tour</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">RTI Act</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Academics</strong><b class="caret" style="color: #337ab7"></b></a>
-                    <ul class="dropdown-menu animated slideDown">
-                        <li><a href="#">Academic Scheduling</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Academic Calender</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Students Achievements</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Seminar and Programs</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Newsletters</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Anit-Raggingk</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Academic Fees</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">MATS Schools</strong><b class="caret" style="color: #337ab7"></b></a>
-                    <ul class="dropdown-menu animated slideDown">
-                        <li><a href="#">MATS School of Basic Sciences</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Business Studies</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Education</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Engineering and Information Technology</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Fashion Designing</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Arts and Humanities</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Information Technology</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Law</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Biological and Chemical Sciences</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Managment Studies and Research</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS School of Physical Education</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Research Programs</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Admission Details</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Distance Education</strong><b class="caret" style="color: #337ab7"></b></a>
-                    <ul class="dropdown-menu animated slideDown">
-                        <li><a href="#">Overview</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Courses Offered</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Exam Time Table</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Admit Cards</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Assignments</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Notice</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Projects</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Results</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">School Programs</strong><b class="caret" style="color: #337ab7"></b></a>
-                    <ul class="dropdown-menu animated slideDown">
-                        <li><a href="#">Teaching Pedagogy</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Programs Offered</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Proposed Programs</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">MATS Research Center</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Gallery</strong><b class="caret" style="color: #337ab7"></b></a>
-                    <ul class="dropdown-menu animated slideDown">
-                        <li><a href="#">MATS Utsav</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Annual Sports</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Convocation Gallery</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Image Gallery</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Video Gallery</a></li>
-                    </ul>
-                </li>
-            </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">About MATS</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li ><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Vision and Mission</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Our Values</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Chancellor's Message</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Vice Chancellor's Message</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Promoter Message</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Approvals and Recognitions</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Our Leadership</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Organizational Hierarchy</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">State of The Art Infrastructure</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Monthly Progress Report</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">CGPURC Headline</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Beyond Academics</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Sports</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATSotsav</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Social Program</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Hostel</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Insdustrial Tour</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">RTI Act</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Academics</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Academic Scheduling</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Academic Calender</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Students Achievements</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Seminar and Programs</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Newsletters</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Anit-Ragging</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Academic Fees</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">MATS Schools</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Basic Sciences</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Business Studies</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Education</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Engineering and Information Technology</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Fashion Designing</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Arts and Humanities</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Information Technology</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Law</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Biological and Chemical Sciences</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Managment Studies and Research</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Physical Education</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Research Programs</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Admission Details</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Distance Education</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Overview</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Courses Offered</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Exam Time Table</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Admit Cards</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Assignments</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Notice</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Projects</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Results</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">School Programs</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Teaching Pedagogy</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Programs Offered</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Proposed Programs</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Research Center</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Gallery</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Utsav</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Annual Sports</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Convocation Gallery</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Image Gallery</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Video Gallery</a></li>
+                  </ul>
+              </li>
+          </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
 </nav>
 
-<div class="middiv">
+
     <div class="headimg">
-        <img src="images/school-basic-science.png" style="width: 100%; height: 100%">
+        <div id="under"><img src="images/school-basic-science.png" style="width: 100%; height: 100%"><div id="over"><h3 style="padding-left: 3%;">MATS School of Basic Sciences</h3></div></div>
     </div>
     <br>
-
+    <div class="middiv">
         <div class="topic">
 
-            <h2>MATS School of Basic Sciences</h2>
+            <h2 id="resphead">MATS School of Basic Sciences</h2>
 
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
@@ -632,7 +668,7 @@
 <div class="row" style="background-color: #292929; width: 100%; color: #555; margin: 0px; padding-bottom: 2%;font-size: 20px; margin-top: -3%; padding-top: 2%;">
 
     <div class="col-sm-6 col-sm-offset-1" >
-        <img width="20%" height="15%" src="logo.png" style="margin-top: 8px; padding-right: 2%; padding-left: 1%;border-right: 1px solid #4A4A4A; float: left; margin-right: 2%;">
+        <img src="logo.png" style="margin-top: 8px; padding-right: 2%; padding-left: 1%;border-right: 1px solid #4A4A4A; float: left; margin-right: 2%;width:20%; height:15%">
         <div style="font-size: 70%; padding-top: 4%;">
             <strong>MATS University,Raipur,CG MATS Tower,Pandri,Raipur(492 002) Website:www.matsuniversity.ac.in<br>Tel:+91 7000910036<br>Email: admissions@matsuniversity.ac.in</strong>
         </div>
