@@ -1,0 +1,1127 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>MATS University
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="header.css" type="text/css">
+    <link href="animate.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Latest compiled and miniedif CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        a:hover{
+            color: #000;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#sitemap").click(function(){
+                $("#site").slideToggle("slow");
+            });
+        });
+    </script>
+    <style>
+        @media only screen and (max-width: 768px) {
+            .grid{
+                margin-left: 13%;
+                padding-right: 5%;
+                margin-top: 10%;
+                width: 100%;
+                float: left;
+            }
+
+            .nestedgrid{
+                margin-left: 2%;
+                width: 48%;
+                float: left;
+            }
+            .responsivesite{
+                text-align: center;
+            }
+            .innersite{
+                margin-left: 17%;
+                margin-top: 5%;
+            }
+            .lowerfooter{
+                width: 100%;
+                float: left;
+                border: none;
+            }
+            .lowerfooterimg{
+                width: 100%;
+                margin-right: 50%;
+                float: left;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .grid{
+                margin-left: 13%;
+                padding-right: 5%;
+                width: 100%;
+                float: left;
+            }
+            .nestedgrid{
+                margin-left: 2%;
+                width: 48%;
+                float: left;
+            }
+            .responsivesite{
+                text-align: center;
+            }
+            .innersite{
+                margin-left: 17%;
+                margin-top: 5%;
+            }
+            .lowerfooter{
+                width: 100%;
+                float: left;
+                border: none;
+            }
+            .lowerfooterimg{
+                width: 100%;
+                margin-right: 50%;
+                float: left;
+            }
+        }
+
+    </style>
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        button.accordion.active, button.accordion:hover {
+            background-color: #63b2f5;
+            color: white;
+        }
+
+        button.accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        button.accordion.active:after {
+            content: "\2212";
+        }
+
+        div.panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    <style>
+        .accordion{
+            color: #274472;
+            background: #e2eaf2;
+            padding: 15px 20px 15px 45px;
+            position: relative;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-top: 0.5px solid #f3f7fa;
+            cursor: pointer;
+        }
+        .sidebtn{
+            text-align: left;
+            color: #274472;
+            background: #e2eaf2;
+            padding: 15px 20px 15px 45px;
+            position: relative;
+            border: 0px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            cursor: pointer;
+        }
+        .sidebtn:hover{
+            color: white;
+            background-color: #63b2f5;
+        }
+    </style>
+    <style>
+      /*.headimg{
+        margin-top: -1%;
+        width: 100%;
+        height: 50%
+      }*/
+      .topic{
+        float: left;
+        margin-left: 3%;
+        width: 60%;
+        height: 10%
+      }
+      .pgdiv{
+        width: 100%
+      }
+      .middiv{
+        padding-bottom: 10%;
+        padding-left: 5%
+      }
+      .sidebtn{
+        width: 80%;
+        height: 50%
+      }
+      .btndiv{
+        font-family: Open Sans;
+        float: left;
+        margin-left: 5%;
+        width: 30%;
+        height: 25%
+      }
+      #resphead{
+        display: none;
+        margin-top: -2%
+      }
+    </style>
+    <style>
+        @media only screen and (max-width: 768px) {
+          .headimg{
+            margin-top: -10%;
+            width: 100%;
+            height: 20%
+          }
+          .topic{
+            float: left;
+            margin-left: 3%;
+            width: 90%;
+            height: 25%
+          }
+          .pgdiv{
+            width: 100%
+          }
+          .middiv{
+            padding-bottom: 60%
+          }
+          .sidebtn{
+            width: 100%;
+            height: 60%;
+            margin-left: -2%
+          }
+          .btndiv{
+            font-family: Open Sans;
+            float: left;
+            width: 100%;
+            height: 25%
+          }
+          .program{
+            width: 100%;
+            font-weight: bold;
+            font-size: 20px
+          }
+          #over{
+            display: none;
+          }
+          #resphead{
+            display: block;
+          }
+        }
+        @media only screen and (max-width: 500px) {
+          .headimg{
+            margin-top: -10%;
+            width: 100%;
+            height: 20%
+          }
+          .topic{
+            float: left;
+            margin-left: 3%;
+            width: 90%;
+            height: 25%
+          }
+          .pgdiv{
+            width: 100%
+          }
+          .middiv{
+            padding-bottom: 60%
+          }
+          .sidebtn{
+            width: 100%;
+            height: 60%;
+            margin-left: -2%
+          }
+          .btndiv{
+            font-family: Open Sans;
+            float: left;
+            width: 100%;
+            height: 25%
+          }
+          .program{
+            width: 100%;
+            font-weight: bold;
+            font-size: 20px
+          }
+          #over{
+            display: none;
+          }
+          #resphead{
+            display: block;
+          }
+        }
+        blockquote {
+          padding: 10px 20px;
+          font-size: 18px;
+          border-left: 5px solid #63b2f5;
+          color: #274472;
+        }
+        #over{
+          width: 33%;
+        }
+    </style>
+    <style>
+    .zoom {
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+  padding-bottom: 1%;
+}
+.zoom:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body style="font-family: Raleway;">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="color: #274472">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><strong style="color: #337ab7">MATS University</strong></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">About MATS</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li ><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Vision and Mission</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Our Values</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Chancellor's Message</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Vice Chancellor's Message</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Promoter Message</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Approvals and Recognitions</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Our Leadership</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Organizational Hierarchy</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">State of The Art Infrastructure</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Monthly Progress Report</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">CGPURC Headline</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Beyond Academics</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Sports</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATSotsav</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Social Program</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Hostel</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Insdustrial Tour</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">RTI Act</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Academics</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Academic Scheduling</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Academic Calender</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Students Achievements</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Seminar and Programs</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Newsletters</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Anit-Ragging</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Academic Fees</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">MATS Schools</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Basic Sciences</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Business Studies</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Education</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Engineering and Information Technology</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Fashion Designing</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Arts and Humanities</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Information Technology</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Law</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Biological and Chemical Sciences</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Managment Studies and Research</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS School of Physical Education</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Research Programs</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Admission Details</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Distance Education</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Overview</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Courses Offered</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Exam Time Table</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Admit Cards</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Assignments</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Notice</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Projects</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Results</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">School Programs</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Teaching Pedagogy</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Programs Offered</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Proposed Programs</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Research Center</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong style="color: #337ab7">Gallery</strong><b class="caret" style="color: #337ab7"></b></a>
+                  <ul class="dropdown-menu animated slideDown">
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">MATS Utsav</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Annual Sports</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Convocation Gallery</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Image Gallery</a></li>
+
+                      <li><a href="#" class="zoom" style="padding-bottom: 5px; padding-top: 5px;">Video Gallery</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <div class="headimg">
+      <div id="under"><img src="images/fashion-3.png"><div id="over"><h3 style="padding-left: 3%;">MATS School of Fashion Designing</h3></div></div>
+   </div>
+    <br>
+<div class="middiv">
+        <div class="topic">
+          <h3 id="resphead">MATS School of Fashion Designing</h3>
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mats School</a></li>
+                <li class="active">MATS School of Fashion Designing</a></li>
+            </ol>
+          </div>
+          <div class="row" style="width: 100%">
+            <div class="col-sm-7" style="margin-left: 3%; text-align: justify;">
+              <h2><strong>TURN YOUR CREATIVE PASSION INTO CAREER</strong></h2>
+              <h4><strong>FASHION & DESIGNING @ MATS</strong></h4>
+            <p>
+              At MATS University, we constantly monitor and strive to take the education to the level that evolves human mind with following elements.
+            </p>
+            <br>
+            <p>
+              To offer programs which provide every student with the opportunity to excel: industry expert, academically, vocationally, technically and socially.
+            </p>
+            <br>
+            <p>
+              To foster skills and work habits, enabling students to succeed in corporatesector, mature socially, leading to success both during and after the graduation experience.
+            </p>
+            <br>
+            <p>
+              To provide students with applicable hands-on learning experiences, encouraging the development of skills needed to succeed in the designing industries and/or post-secondary educational experiences.
+            </p>
+            <br>
+            <p>
+              To devise programs that create applied learning experiences that merge academic and career skills, helping students see unity within the diversity of learning.
+            </p>
+            <br>
+            <p>
+              To strengthen ties with the business community, providing students access to the latest innovations and technological advances as well as to special enrichments and on-the-Job training.
+            </p>
+            <br>
+            <p>
+              To foster professionalism and collaboration among the entire school community, drawing upon the unique talents and expertise of that community.
+            </p>
+
+        <br><br>
+        <h4><strong>CAREER OPPORTUNITIES</strong></h4>
+        <br>
+        <p>
+          Today’s Fashion Industry is more competitive than ever. A carrier in fashion means opportunities, fame and big bucks. It also means explosive growth, trend setting styles. Those with formal education in fashion design, excellent portfolios, and industry experience will have the best job prospects. .In addition, it may be necessary for some fashion designers to start their own production house so that they can be a <strong>job giver not a job seeker.</strong>
+        </p>
+        <br>
+        <p>
+          Many are attracted to pursue a career in the fashion industry due to lucrative income opportunities. Aside from that, the idea that you can succeed on your own motivates aspirants even more. As a matter of fact, about one-third of professional fashion designers are entrepreneurs.
+        </p>
+        <br>
+        <p>
+          In general, fashion designer professionals have innate artistic and creative qualities. They use their creative gifts and artistic talents to create unique design concepts for various fashion applications. Today, fashion designer professionals are in demand in various industries. Since there is a steady demand for fashion designers specializing in a particular field, most of the aspirants focus their talent in one specialized fashion area like interior designing, merchandise displays, clothing/apparel, theatre sets and many more.
+        </p>
+        <br><br>
+        <table width="100%" cellpadding="0" cellspacing="0">
+                                            <tbody><tr>
+                                                <td style="width: 40%" valign="top">
+                                                    <ul class="list check-list">
+                                                                    <li>Designer wear production</li>
+                                                                    <li>Planning and concept management</li>
+                                                                    <li>Fashion marketing</li>
+                                                                    <li>Design production management</li>
+                                                                    <li>Fashion stylist</li>
+                                                                    <li>Quality control</li>
+                                                                    <li>Fashion accessory design </li>
+                                                                    <li>Promotion of brands </li>
+                                                                    <li>Costume designer</li>
+                                                                    <li>Fashion consultant</li>
+                                                                    <li>Personal stylist</li>
+
+                                                                </ul>
+                                                </td>
+
+                                                <td style="width: 40%" valign="top">
+                                                   <ul class="list check-list">
+                                                                    <li>Graphic designer</li>
+                                                                    <li>Production pattern maker</li>
+                                                                    <li>Fashion coordinator</li>
+                                                                    <li>Apparel production manager</li>
+                                                                    <li>Show room sales representative</li>
+                                                                    <li>Fashion Illustrator</li>
+                                                                    <li>Cutting assistant</li>
+                                                                    <li>Fashion photographer</li>
+                                                                    <li>Fashion media &amp; journalist</li>
+                                                                    <li>Public relation executive</li>
+                                                                    <li>Technical designer </li>
+
+                                                                </ul>
+
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <br><br>
+                                        <style>
+                                        .list{
+  list-style: none;
+}
+
+.list li:before {
+  content: '✓   ';
+}
+@media (max-width: 767px){
+table td, table th {
+    border: none;
+}
+}
+table td, table th {
+    border: 1px solid #ecedf1;
+    padding: 12px 20px;
+    text-align: left;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+}
+@media (max-width: 767px){
+table, tbody, tr, td, th {
+    display: block;
+    width: 100%!important;
+    max-width: 100%;
+    min-width: 100%;
+}
+}
+                                        table {
+                                            width: 100%;
+                                            background: #fafbfd;
+                                            border-radius: 5px;
+                                            -webkit-border-radius: 5px;
+                                            -moz-border-radius: 5px;
+                                            border: 1px solid #ecedf1;
+                                            overflow: hidden;
+                                        }
+                                        table {
+                                            border-collapse: collapse;
+                                            border-spacing: 0;
+                                        }
+                                        </style>
+        <div style="width: 100%">
+        <strong><h3 class="program" style="width: 100%;font-weight: bold">UNDERGRADUATE PROGRAM</h3></strong>
+        <br>
+        <div class="pgdiv">
+            <button class="accordion"><b>B.Sc. (H) in Fashion Designing & Technology</b></button>
+            <div style="background-color: #f2f2f2" class="panel">
+                <br>
+                <p style="font-weight: bold">Duration</p>
+                <p>Three Years (or Six Semester)  </p>
+                <br>
+                <p style="font-weight: bold">Lateral Entry</p>
+                <p>The candidates seeking admission to the IInd year of the above programme should have successfully completed the Ist year of study from any recognized University or any government polytechnic college in the same discipline.</p>
+                <br>
+                <p style="font-weight: bold">Academic Year</p>
+                <p>There would be academic cycle one from January to June and second from July to December.</p>
+                <br>
+                <p style="font-weight: bold">Course Structure </p>
+                <p><a href="#">ACADEMIC COURSE VIEW</a></p>
+            </div>
+        </div>
+
+        <div class="pgdiv">
+            <button class="accordion"><b>B.Sc. (H) in Interior Designing & Decoration</b></button>
+            <div style="background-color: #f2f2f2" class="panel">
+                <br>
+                <p style="font-weight: bold">Duration</p>
+                <p>Three Years (or Six Semester)  </p>
+                <br>
+                <p style="font-weight: bold">Lateral Entry</p>
+                <p>The candidates seeking admission to the IInd year of the above programme should have successfully completed the Ist year of study from any recognized University or any government polytechnic college in the same discipline. </p>
+                <br>
+                <p style="font-weight: bold">Academic Year</p>
+                <p>There would be academic cycle one from January to June and second from July to December.</p>
+                <br>
+                <p style="font-weight: bold">Course Structure </p>
+                <p><a href="#">ACADEMIC COURSE VIEW</a></p>
+            </div>
+        </div>
+
+        <div class="pgdiv">
+            <button class="accordion"><b>Diploma in Fashion Designing & Technology</b></button>
+            <div style="background-color: #f2f2f2" class="panel">
+                <br>
+                <p style="font-weight: bold">Duration</p>
+                <p>One Year (Annual)</p>
+                <br>
+                <!--<p style="font-weight: bold">Eligibility</p>
+                <p>10+2 in any discipline </p>
+                <br>-->
+                <p style="font-weight: bold">Academic Year</p>
+                <p>There would be an Annual session</p>
+                <br>
+                <p style="font-weight: bold">Course Structure </p>
+                <p><a href="#">ACADEMIC COURSE VIEW</a></p>
+            </div>
+        </div>
+
+        <div class="pgdiv">
+            <button class="accordion"><b>Diploma in Interior Designing & Decoration</b></button>
+            <div style="background-color: #f2f2f2" class="panel">
+                <br>
+                <p style="font-weight: bold">Duration</p>
+                <p>One Year (Annual)</p>
+                <br>
+                <!--<p style="font-weight: bold">Eligibility</p>
+                <p>10+2 in any discipline </p>
+                <br>-->
+                <p style="font-weight: bold">Academic Year</p>
+                <p>There would be an Annual session</p>
+                <br>
+                <p style="font-weight: bold">Course Structure </p>
+                <p><a href="#">ACADEMIC COURSE VIEW</a></p>
+            </div>
+        </div>
+
+        <div class="pgdiv">
+            <button class="accordion"><b>Advanced Diploma in Interior Designing & Decoration</b></button>
+            <div style="background-color: #f2f2f2" class="panel">
+                <br>
+                <p style="font-weight: bold">Duration</p>
+                <p>Two Years (Four Semesters) </p>
+                <!--<br>
+                <p style="font-weight: bold">Eligibility</p>
+                <p>10+2 in any discipline </p>-->
+                <br>
+                <p style="font-weight: bold">Academic Year</p>
+                <p>There would be academic cycle one from January to June and second from July to December.</p>
+                <br>
+                <p style="font-weight: bold">Course Structure </p>
+                <p><a href="#">ACADEMIC COURSE VIEW</a></p>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div style="width: 100%">
+      <strong><h3 class="program" style="width: 100%;font-weight: bold">POST GRADUATE PROGRAM</h3></strong>
+      <br>
+      <div class="pgdiv">
+          <button class="accordion"><b>M.Des. in Fashion Designing</b></button>
+          <div style="background-color: #f2f2f2" class="panel">
+              <br>
+              <p style="font-weight: bold">Duration</p>
+              <p>Two Years (or Four Semester)   </p>
+              <!--<br>
+              <p style="font-weight: bold">Eligibility</p>
+              <p>Graduation with Commerce </p>-->
+              <br>
+              <p style="font-weight: bold">Academic Year</p>
+              <p>There would be academic cycle one from January to June and second from July to December.</p>
+              <br>
+              <p style="font-weight: bold">Course Structure </p>
+              <!--<p>Contact - admissions@matsuniversity.ac.in</p>-->
+          </div>
+      </div>
+
+      <div class="pgdiv">
+          <button class="accordion"><b>P.G. Diploma in Fashion Designing & Technology</b></button>
+          <div style="background-color: #f2f2f2" class="panel">
+              <br>
+              <p style="font-weight: bold">Duration</p>
+              <p>One Year (Annual )</p>
+              <br>
+              <p style="font-weight: bold">Academic Year</p>
+              <p>There would be Annual session. </p>
+              <br>
+              <p style="font-weight: bold">Course Structure </p>
+              <p><a href="#">ACADEMIC COURSE VIEW</a></p>
+          </div>
+      </div>
+    </div>
+    <br>
+    <div style="width: 100%">
+    <strong><h3 class="program" style="width: 100%;font-weight: bold">Certificate Program</h3></strong>
+    <br>
+    <div class="pgdiv">
+        <button class="accordion"><b>Certificate Program</b></button>
+        <div style="background-color: #f2f2f2" class="panel">
+          <br>
+          <ul style="list-style-type: circle;">
+            <li>Certification in Photography (3 Months, 6 Months)</li><br>
+            <li>Certification in Jewelry Designing (6 Months, 1Year)</li><br>
+            <li>Certification in Fashion Designing (3 Months, 6 Months)</li><br>
+            <li>Certification in Interior Designing (3 Months, 6 Months)</li>
+          </ul><br>
+        </div>
+    </div>
+</div>
+  <!--  <strong><h3 class="program" style="width: 100%;font-weight: bold">ELIGIBILITY CRITERIA</h3></strong>
+    <br>
+    <p>
+      <strong>UG Programms:</strong> Based on Marks obtained in 10+2 PI.<br>
+      <b>PG Programms:</b> Based on Marks of Graduation, PI.
+    </p>
+    <br>
+    <strong><h3 class="program" style="width: 100%;font-weight: bold">BUSINESS STUDIES @ MATS</h3></strong>
+    <br>
+    <p>
+      Selecting a College to continue your education is one of the most important decisions that you will ever make, whether you are just out of school or returning to education as a mature student. Therefore, you should choose carefully and wisely.
+    </p>
+    <br>
+    <p>
+      Our Curriculum model integrates the delivery of core business knowledge and skills. The School is widely recognized for its commitment to innovation and integrity, bringing cutting-edge faculty research into the classroom, integrating technology throughout the curriculum. The School expanded its curriculum to include specialty courses in finance, banking, insurance, strategic consulting, marketing, creating and managing growth enterprises and global business.
+    </p>
+    <br>
+    <p>
+      Our Business courses prepare students for various business-related employments including: accounting departments, industrial or public sector organizations, public relations, advertising, financial services and risk management.
+    </p>
+    <br>-->
+    <div>
+    <strong><h3 class="program" style="width: 100%;font-weight: bold">MEDIA SPEAKS</h3></strong>
+    <p><b>MATS School of Fashion Designing holds Alumni Meet </b></p>
+    <div class="col-md-12">
+	     <blockquote><b>MATS school of fashion designing organized the alumni meet. All the Alumni were invited and were welcomed wholeheartedly. They expressed their Work experiences and their life outside MATS. These were followed by songs, dance and some games in which the alumni and students participated which enhanced the event.</b></blockquote>
+	  </div>
+  </div>
+    <br><br>
+    <div>
+    <strong><h3 class="program" style="width: 100%;font-weight: bold">STUDENT SPEAKS</h3></strong>
+    <div class="col-md-12">
+	     <blockquote><b>Value determine who we are and where we stand in the future. MATS School of Humanities, Department of Fashion Designing & Technology has inculcated in me true potential and ensured that I succeed in everything I do.</b></blockquote>
+	  </div>
+  </div>
+    </div>
+        <div class="col-sm-4 btndiv">
+            <button class="sidebtn"><b><span style="font-size: 20px">NAAC</span><br>&nbsp;</b></button><br>
+            <button class="sidebtn" style="margin-top: 1%"><b><span style="font-size: 20px">ONLINE FORM</span><br><span style="color: #808ca4; font-size: 13px;">Get Online Admission</span></b></button><br>
+            <button class="sidebtn" style="margin-top: 1%"><b><span style="font-size: 20px">MATS CAREER</span><br><span style="color: #808ca4; font-size: 13px;">Join with Us</span></b></button><br>
+            <button class="sidebtn" style="margin-top: 1%"><b><span style="font-size: 20px">VTP COURSES</span><br><span style="color: #808ca4; font-size: 13px;">Vocational Training Program</span></b></button>
+        </div>
+
+    </div>
+</div>
+<footer style="background-color: #333333; font-family: raleway;">
+    <div style="padding-top: 4%; margin-left: -50px">
+        <div class="container" style="color: #CCC">
+            <div class="row">
+                <div class="col-sm-3 grid">
+                    <h4>ABOUT MATS</h4>
+                    <br>
+                    <p> To become a world class center in providing globally relevant education. MATS will be the Global University, known for the quality academic programs and outstanding faculty, products and services to students and clients independent of place and time constraint. </p>
+                </div>
+                <div class="col-sm-3 grid">
+                    <div class="row">
+                        <div class="col-sm-6 nestedgrid">
+                            <h4>MATS</h4>
+                            <br>
+                            <ul>
+                                <li><i class="fa fa-angle-right"></i>  About MATS</li>
+                                <li ><i class="fa fa-angle-right"></i>  Academics</li>
+                                <li ><i class="fa fa-angle-right"></i>  School &nbsp;&nbsp;Programs</li>
+                                <li ><i class="fa fa-angle-right"></i>  MATS Schools</li>
+                                <li ><i class="fa fa-angle-right"></i>  Career</li>
+                                <li ><i class="fa fa-angle-right"></i>  Gallery</li>
+                                <li ><i class="fa fa-angle-right"></i>  NIRF</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 nestedgrid">
+                            <br><br>
+                            <ul>
+                                <li  style="margin-top: 16px"><i class="fa fa-angle-right"></i>  Beyond &nbsp;&nbsp;Academics</li>
+                                <li ><i class="fa fa-angle-right"></i>  Distance &nbsp;&nbsp;Education</li>
+                                <li ><i class="fa fa-angle-right"></i>  School &nbsp;&nbsp;Programs</li>
+                                <li ><i class="fa fa-angle-right"></i>  Make calls</li>
+                                <li ><i class="fa fa-angle-right"></i>  Press release</li>
+                                <li ><i class="fa fa-angle-right"></i>  Site Map</li>
+                                <li ><i class="fa fa-angle-right"></i>  Contact Us</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 grid">
+                    <h4>LATEST TWEETS</h4>
+                    <br>
+                    <button style="background: #40bff5; color: white; font-size: 14px; width: 210px; border-radius: 3px; border: none;"><i class="fa fa-fw fa-twitter"></i> FOLLOW US ON TWITTER</button>
+                </div>
+                <div class="col-sm-3 grid">
+                    <h4>LIKE US ON FACEBOOK</h4>
+                    <br>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/matsraipur/?ref=br_rs" width="340" height="210px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>
+            <br>
+        </div>
+        <hr style="max-width: 100%">
+        <div class="responsivesite" id="sitemap">
+            <p style="margin-left: 5%; color: #CCC">+ Site Map</p>
+        </div>
+        <div id="site" style="display: none">
+            <br>
+            <div class="container" style="color: #CCC; font-family: raleway;">
+                <div class="row">
+                    <div class="col-sm-3 innersite">
+                        <b><h4>ABOUT MATS</h4></b>
+
+                        <ul>
+                            <li >Vision and mission</li>
+                            <li >Our values</li>
+                            <li >Chancellor's message</li>
+                            <li >Vice Chancellor's message</li>
+                            <li >Promoter Message</li>
+                            <li >Approvals and Recognitions</li>
+                            <li >Our Leadership</li>
+                            <li >Organizational Hierarchy</li>
+                            <li >State Of The Art Infrastructure</li>
+                            <li >Monthly Progress Report</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-3 innersite">
+                        <b><h4>BEYOND ACADEMICS</h4></b>
+
+                        <ul>
+                            <li >MATS Sports</li>
+                            <li >MATSotsav</li>
+                            <li >School Programs</li>
+                            <li >MATS Social Program</li>
+                            <li >MATS Hostel</li>
+                            <li >Industrial Tour</li>
+                        </ul>
+                        <br>
+                        <b><h4>SCHOOL PROGRAMS</h4></b>
+
+                        <ul>
+                            <li >Teaching Pedagogy</li>
+                            <li >Programs Offered</li>
+                            <li >Proposed Programs</li>
+                            <li >MATS Research Center</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 innersite">
+                        <b><h4>ACADEMICS</h4></b>
+
+                        <ul>
+                            <li >Academics Scheduling</li>
+                            <li >Academic Calendar</li>
+                            <li >Student Achievements</li>
+                            <li >Seminar &amp; Programs</li>
+                            <li >Anti Ragging</li>
+                        </ul>
+                        <br>
+                        <b><h4>GALLERY</h4></b>
+
+                        <ul>
+                            <li >Convocation Gallery</li>
+                            <li >Image Gallery</li>
+                            <li >Video Gallery</li>
+                        </ul>
+                        <br>
+                        <b><h4>OTHERS</h4></b>
+
+                        <ul>
+                            <li >Download</li>
+                            <li >Career</li>
+                            <li >Online Forms</li>
+                            <li >Distance Education</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 innersite">
+                        <b><h4>MATS SCHOOLS</h4></b>
+
+                        <ul>
+                            <li >MATS School of Basic Sciences</li>
+                            <li >MATS School of Business Studies</li>
+                            <li >MATS School of Education</li>
+                            <li >MATS School of Engineering and Technology</li>
+                            <li >MATS School of Fashion Designing</li>
+                            <li >MATS School of Arts and Humanities</li>
+                            <li >MATS School of Information Technology</li>
+                            <li >MATS School of Law</li>
+                            <li >MATS School of Life Sciences</li>
+                            <li >MATS School of Management Studies and Research</li>
+                            <li >MATS School of Physical Education</li>
+                            <li >Research Programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><hr style="width: 100%">
+
+
+
+</footer>
+<div class="row" style="background-color: #292929; width: 100%; color: #555; margin: 0px; padding-bottom: 2%;font-size: 20px; margin-top: -3%; padding-top: 2%;">
+
+  <div class="col-sm-5 col-sm-offset-1" >
+      <img src="logo.png" style="margin-top: 8px; padding-right: 2%; padding-left: 1%;border-right: 1px solid #4A4A4A; float: left; margin-right: 2%;width: 20%; height:15%">
+      <div style="font-size: 70%; padding-top: 4%;">
+          <strong>MATS University,Raipur,CG MATS Tower,Pandri,Raipur(492 002) Website:www.matsuniversity.ac.in<br>Tel:+91 7000910036<br>Email: admissions@matsuniversity.ac.in</strong>
+      </div>
+  </div>
+    <div class="col-sm-6">
+        <center>
+            <h2>Get Connected:</h2>
+            <div class="wrapper">
+                <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline">
+                    <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </center>
+        <style>
+            .list-unstyled {
+                padding-left: 0;
+                list-style: none;
+            }
+            .list-inline li {
+                display: inline-block;
+                padding-right: 5px;
+                padding-left: 5px;
+                margin-bottom: 10px;
+            }
+            /*---- Genral classes end -------*/
+            /*Change icons size here*/
+            .social-icons .fa {
+                font-size: 1.0em;
+            }
+            /*Change icons circle size and color here*/
+            .social-icons .fa {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #FFF;
+                color: rgba(255, 255, 255, 0.8);
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .social-icons.icon-circle .fa{
+                border-radius: 50%;
+            }
+            .social-icons.icon-rounded .fa{
+                border-radius:5px;
+            }
+            .social-icons.icon-flat .fa{
+                border-radius: 0;
+            }
+
+            .social-icons .fa:hover, .social-icons .fa:active {
+                color: #FFF;
+                -webkit-box-shadow: 1px 1px 3px #333;
+                -moz-box-shadow: 1px 1px 3px #333;
+                box-shadow: 1px 1px 3px #333;
+            }
+            .social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+            .social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active {
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+            .social-icons .fa-adn{background-color:#504e54;}
+            .social-icons .fa-apple{background-color:#aeb5c5;}
+            .social-icons .fa-android{background-color:#A5C63B;}
+            .social-icons .fa-bitbucket,.social-icons .fa-bitbucket-square{background-color:#003366;}
+            .social-icons .fa-bitcoin,.social-icons .fa-btc{background-color:#F7931A;}
+            .social-icons .fa-css3{background-color:#1572B7;}
+            .social-icons .fa-dribbble{background-color:#F46899;}
+            .social-icons .fa-dropbox{background-color:#018BD3;}
+            .social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
+            .social-icons .fa-flickr{background-color:#FF0084;}
+            .social-icons .fa-foursquare{background-color:#0086BE;}
+            .social-icons .fa-github,.social-icons .fa-github-alt,.social-icons .fa-github-square{background-color:#070709;}
+            .social-icons .fa-google-plus,.social-icons .fa-google-plus-square{background-color:#CF3D2E;}
+            .social-icons .fa-html5{background-color:#E54D26;}
+            .social-icons .fa-instagram{background-color:#A1755C;}
+            .social-icons .fa-linkedin,.social-icons .fa-linkedin-square{background-color:#0085AE;}
+            .social-icons .fa-linux{background-color:#FBC002;color:#333;}
+            .social-icons .fa-maxcdn{background-color:#F6AE1C;}
+            .social-icons .fa-pagelines{background-color:#241E20;color:#3984EA;}
+            .social-icons .fa-pinterest,.social-icons .fa-pinterest-square{background-color:#CC2127;}
+            .social-icons .fa-renren{background-color:#025DAC;}
+            .social-icons .fa-skype{background-color:#01AEF2;}
+            .social-icons .fa-stack-exchange{background-color:#245590;}
+            .social-icons .fa-stack-overflow{background-color:#FF7300;}
+            .social-icons .fa-trello{background-color:#265A7F;}
+            .social-icons .fa-tumblr,.social-icons .fa-tumblr-square{background-color:#314E6C;}
+            .social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;}
+            .social-icons .fa-vimeo-square{background-color:#229ACC;}
+            .social-icons .fa-vk{background-color:#375474;}
+            .social-icons .fa-weibo{background-color:#D72B2B;}
+            .social-icons .fa-windows{background-color:#12B6F3;}
+            .social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;}
+            .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+            .social-icons .fa-rss,.social-icons .fa-rss{background-color:#F7931A;}
+        </style>
+
+    </div>
+
+</div>
+<style>
+    /* Collapsing Navbar Styles */
+
+    @media(min-width:768px) {
+        .navbar-default {
+            -webkit-transition: all .35s;
+            -moz-transition: all .35s;
+            transition: all .35s;
+            padding: 15px 0;
+            /* Add additional styles here for the UNCOLLAPSED state */
+        }
+        .navbar-default.affix {
+            padding: 0;
+            /* Add additional styles here for the COLLAPSED state */
+        }
+    }
+</style>
+
+<script>
+    // Initialize affix and add an offset to add affix class on scroll
+    $('#mainNav').affix({
+        offset: {
+            top: 100
+        }
+    })
+</script>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        }
+    }
+</script>
+</body>
+</html>
